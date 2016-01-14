@@ -23,5 +23,5 @@ server:
 
 logging:
   level:
-    ROOT: INFO
+    ROOT: DEBUG
     org.springframework.web: DEBUG
