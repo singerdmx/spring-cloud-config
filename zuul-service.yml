@@ -12,8 +12,11 @@ endpoints:
 zuul:
   routes:
     device-service:
-      path: /device/**
+      path: /devices/**
       stripPrefix: false
+    device-service:
+      path: /device/**
+      stripPrefix: true
     auth-service:
       path: /auth/**
       stripPrefix: false
