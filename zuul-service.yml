@@ -1,0 +1,27 @@
+info:
+  component: Zuul Service
+  
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  routes:
+    device-service:
+      path: /device/**
+      stripPrefix: false
+    auth-service:
+      path: /auth/**
+      stripPrefix: false
+
+server:
+  port: 8765
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
