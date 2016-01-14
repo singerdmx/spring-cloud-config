@@ -11,15 +11,18 @@ endpoints:
 
 zuul:
   routes:
-    device-service:
+    device-service_devices:
       path: /devices/**
       stripPrefix: false
-    device-service:
+      serviceId: device-service
+    device-service_device:
       path: /device/**
       stripPrefix: true
+      serviceId: device-service
     auth-service:
       path: /auth/**
       stripPrefix: false
+      serviceId: auth-service
 
 server:
   port: 8765
