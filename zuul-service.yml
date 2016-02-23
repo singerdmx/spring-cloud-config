@@ -27,6 +27,10 @@ zuul:
 server:
   port: 8765
 
+endpoints:
+  restart:
+    enabled: true
+
 logging:
   level:
     ROOT: INFO
