@@ -21,7 +21,7 @@ zuul:
       serviceId: device-service
     auth-service:
       path: /auth/**
-      stripPrefix: false
+      stripPrefix: true
       serviceId: auth-service
 
 server:
